@@ -10,8 +10,8 @@ function IndexPage(props) {
     <>
       <Meta />
       <HeroSection
-        title="Premium leads for all your SaaS projects"
-        subtitle="Focus on building your amazing service and we will do the rest. We grew more than 10,000 online businesses."
+        title="Premium websites customized for all your projects"
+        subtitle="Focus on building your amazing service and we will do the rest."
         strapline=""
         size="lg"
         bgColor="bg-white"
@@ -20,8 +20,8 @@ function IndexPage(props) {
         textColor=""
       />
       <FeaturesSection
-        title="The best tech under the hood"
-        subtitle="Build user friendly and modern dashboards using the latest tech. Now is the time with a best selling UI framework."
+        title="Helping your business grow."
+        subtitle="There is enormous value in a reliable application. Take your business to the next level with a modern website, SEO optimized and scalable. Get listed and found on Google; you will have access to site analytics so you can reach a much wider audience or a niche -- everything is customizable and made to specification."
         strapline="Created with passion"
         size="md"
         bgColor="bg-white"
@@ -29,7 +29,7 @@ function IndexPage(props) {
         bgImageOpacity={1}
         textColor=""
       />
-      <ClientsSection
+      {/* <ClientsSection
         title="You're in good company"
         subtitle=""
         strapline="Lots of happy customers"
@@ -38,7 +38,7 @@ function IndexPage(props) {
         bgImage=""
         bgImageOpacity={1}
         textColor=""
-      />
+      /> */}
       <TestimonialsSection
         title="Customer Testimonials"
         subtitle=""

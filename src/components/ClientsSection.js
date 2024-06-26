@@ -8,6 +8,9 @@ import {
   MapPinIcon,
 } from "@heroicons/react/24/solid";
 import Section from "./Section";
+import ss from "./../img/ss.jpg";
+import wp from "./../img/wp.jpg";
+import lp from "./../img/lp.jpg";
 import SectionHeader from "./SectionHeader";
 
 function ClientsSection(props) {
@@ -55,21 +58,16 @@ function ClientsSection(props) {
           subtitle={props.subtitle}
           strapline={props.strapline}
           className="text-center"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-3 divide-gray-100 divide-y md:divide-y-0 md:divide-x text-center text-gray-400 border-b border-gray-100">
-          {clientsRowOne.map((client, index) => (
+        />{ss}
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 divide-gray-100 divide-y md:divide-y-0 md:divide-x text-center text-gray-400  border-gray-100">
             <div
               className="px-2 h-28 flex items-center justify-center"
-              key={index}
             >
               <div className="inline-flex items-center space-x-2 text-3xl font-semibold">
-                <client.logo className="inline-block w-10 h-10" />
-                <span>{client.name}</span>
-              </div>
+{ss}              </div>
             </div>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 divide-gray-100 divide-y md:divide-y-0 md:divide-x text-center text-gray-400">
+        </div> */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 divide-gray-100 divide-y md:divide-y-0 md:divide-x text-center text-gray-400">
           {clientsRowTwo.map((client, index) => (
             <div
               className="px-2 h-28 flex items-center justify-center"
@@ -81,7 +79,7 @@ function ClientsSection(props) {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </Section>
   );

@@ -7,72 +7,65 @@ import Button from "./Button";
 function PricingSection(props) {
   const plans = [
     {
-      id: "starter",
+      id: "Starter",
       name: "Starter",
-      price: "10",
-      subtitle: "For solo developers",
+      price: "300",
+      subtitle: "For small business",
       perks: [
         <>
-          <strong>100</strong> Custom Projects
+          <strong>-</strong> Landing Page
         </>,
         <>
-          <strong>50</strong> Paying Clients
+          <strong>-</strong> About Us
         </>,
         <>
-          <strong>10GB</strong> SSD Storage
+          <strong>-</strong> Contact Us
         </>,
         <>
-          <strong>1TB</strong> Bandwidth
+          <strong>-</strong> SEO
         </>,
-        <>
-          <strong>24/7</strong> Email Support
-        </>,
+    
       ],
     },
     {
-      id: "pro",
+      id: "Pro",
       name: "Pro",
-      price: "20",
+      price: "400",
       subtitle: "For large teams",
       featured: true,
       perks: [
         <>
-          <strong>1000</strong> Custom Projects
+          <strong>-</strong> Login
         </>,
         <>
-          <strong>200</strong> Paying Clients
+          <strong>-</strong> Visual FX
         </>,
         <>
-          <strong>100GB</strong> SSD Storage
+          <strong>-</strong> Payments
         </>,
         <>
-          <strong>10TB</strong> Bandwidth
+          <strong>-</strong> More Pages
         </>,
-        <>
-          <strong>24/7</strong> Email Support
-        </>,
+      
       ],
     },
     {
-      id: "business",
+      id: "Business",
       name: "Business",
-      price: "50",
+      price: "500",
       subtitle: "Custom solutions",
       perks: [
         <>
-          <strong>Unlimited</strong> Custom Projects
+          <strong>-</strong> User Profiles
         </>,
         <>
-          <strong>Unlimited</strong> Paying Clients
+          <strong>-</strong> Dashboard View
         </>,
         <>
-          <strong>Unlimited</strong> SSD Storage
+          <strong>-</strong> API
         </>,
         <>
-          <strong>Unlimited</strong> Bandwidth
-        </>,
-        <>
-          <strong>24/7</strong> Priority Email Support
+          <strong>-</strong> Database
         </>,
       ],
     },
@@ -119,9 +112,9 @@ function PricingSection(props) {
                 </span>
                 <div className="mb-1">
                   <span className="text-3xl lg:text-4xl font-extrabold">
-                    ${plan.price}
+                    {plan.price}
                   </span>
-                  <span className="text-gray-700 font-semibold">/mon</span>
+                  <span className="text-gray-700 font-semibold">USD</span>
                   <p className="text-gray-600 text-sm font-medium">
                     {plan.subtitle}
                   </p>
@@ -148,7 +141,7 @@ function PricingSection(props) {
 
               <div className="px-5 pb-5 lg:px-6 lg:pb-6">
                 <Button
-                  href={`https://app.mysite.com/purchase/${plan.id}`}
+                  href={`/contact`}
                   size="lg"
                   variant={plan.featured ? "primary" : "dark"}
                   isBlock={true}

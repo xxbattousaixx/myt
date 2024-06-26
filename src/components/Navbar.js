@@ -14,7 +14,20 @@ import Section from "./Section";
 import { Link } from "./../util/router";
 import FeatureIcon2 from "./FeatureIcon2";
 import Button from "./Button";
+import { NavLink as BaseNavLink } from "react-router-dom";
+import isURL from "is-url";
 
+const NavLink = ({ children, to, ...props }) => {
+  return isURL(to) ? (
+    <a href={to} {...props}>
+      {children}
+    </a>
+  ) : (
+    <BaseNavLink to={to} {...props}>
+      {children}
+    </BaseNavLink>
+  );
+};
 function Navbar(props) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
@@ -74,7 +87,7 @@ function Navbar(props) {
                 d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
               />
             </svg>
-            <span>Company</span>
+            <span>Make Your Time</span>
           </Link>
           <div className="flex items-center ml-auto space-x-1 lg:space-x-4">
             <ul className="hidden lg:flex items-center ml-auto">
@@ -105,13 +118,12 @@ function Navbar(props) {
                           </div>
                           <div>
                             <h5 className={`${classes.dropdown.featureName}`}>
-                              HTML Editor
+                              Company Landing Pages
                             </h5>
                             <p
                               className={`${classes.dropdown.featureDescription}`}
                             >
-                              Write and manipulate your markup directly in your
-                              browser
+                              5-8 reactive webpages to showcase what your business has to offer on desktop or mobile.
                             </p>
                           </div>
                         </Link>
@@ -126,13 +138,12 @@ function Navbar(props) {
                           </div>
                           <div>
                             <h5 className={`${classes.dropdown.featureName}`}>
-                              CSS Editor
+                              Website Features
                             </h5>
                             <p
                               className={`${classes.dropdown.featureDescription}`}
                             >
-                              Style your markup code with smart tools supporting
-                              Sass
+                              Style your website with 3D elements and other interactive features.
                             </p>
                           </div>
                         </Link>
@@ -147,13 +158,12 @@ function Navbar(props) {
                           </div>
                           <div>
                             <h5 className={`${classes.dropdown.featureName}`}>
-                              Web Page Builder
+                              SEO & Optimization
                             </h5>
                             <p
                               className={`${classes.dropdown.featureDescription}`}
                             >
-                              Explore all available components and build your
-                              website
+                              Complete your project by making final changes and showcasing your name on Google properly.
                             </p>
                           </div>
                         </Link>
@@ -162,7 +172,7 @@ function Navbar(props) {
                   </div>
                 </div>
               </li>
-              <li className="relative group">
+              {/* <li className="relative group">
                 <span className={`${classes.navLink}`} href="">
                   <span>Resources</span>
                   <ChevronDownIcon className={classes.navLinkIcon} />
@@ -227,7 +237,7 @@ function Navbar(props) {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
               <li className="relative group">
                 <Link to="/about" className={`${classes.navLink}`}>
                   <span>About</span>
@@ -241,9 +251,9 @@ function Navbar(props) {
               <li className="relative group">
                 <a
                   className={`${classes.navLink}`}
-                  href="https://app.mysite.com/auth/signin"
+                  href="/contact"
                 >
-                  <span>Sign in</span>
+                  <span>Contact</span>
                 </a>
               </li>
             </ul>
@@ -277,10 +287,11 @@ function Navbar(props) {
                   </div>
                   <div>
                     <h5 className={`${classes.dropdown.featureName}`}>
-                      HTML Editor
+                      Company Landing Pages
                     </h5>
                     <p className={`${classes.dropdown.featureDescription}`}>
-                      Write and manipulate your markup directly in your browser
+                    5-8 reactive webpages to showcase what your business has to offer on desktop or mobile.
+
                     </p>
                   </div>
                 </Link>
@@ -295,10 +306,11 @@ function Navbar(props) {
                   </div>
                   <div>
                     <h5 className={`${classes.dropdown.featureName}`}>
-                      CSS Editor
+                      Website Features
                     </h5>
                     <p className={`${classes.dropdown.featureDescription}`}>
-                      Style your markup code with smart tools supporting Sass
+                    Style your website with 3D elements and other interactive features.
+
                     </p>
                   </div>
                 </Link>
@@ -313,17 +325,17 @@ function Navbar(props) {
                   </div>
                   <div>
                     <h5 className={`${classes.dropdown.featureName}`}>
-                      Web Page Builder
+                   SEO & Optimization
                     </h5>
                     <p className={`${classes.dropdown.featureDescription}`}>
-                      Explore all available components and build your website
+                    Complete your project by making final changes and showcasing your name on Google properly.
                     </p>
                   </div>
                 </Link>
               </nav>
             </div>
             <div className="p-6 space-y-6">
-              <h4 className={`${classes.dropdown.title}`}>Learn</h4>
+              {/* <h4 className={`${classes.dropdown.title}`}>Learn</h4>
               <nav className="flex flex-col space-y-3">
                 <Link to="/" className={`${classes.dropdown.link}`}>
                   Resource Center
@@ -334,7 +346,7 @@ function Navbar(props) {
                 <Link to="/" className={`${classes.dropdown.link}`}>
                   User Guides
                 </Link>
-              </nav>
+              </nav> */}
               <h4 className={`${classes.dropdown.title}`}>More</h4>
               <nav className="flex flex-col space-y-3">
                 <Link to="/about" className={`${classes.dropdown.link}`}>
@@ -343,12 +355,15 @@ function Navbar(props) {
                 <Link to="/pricing" className={`${classes.dropdown.link}`}>
                   Pricing
                 </Link>
-                <a
+                <NavLink to="https://dc7web.space" className={`${classes.dropdown.link}`}>
+                  Portfolio
+                </NavLink>
+                {/* <a
                   className={`${classes.dropdown.link}`}
                   href="https://app.mysite.com/auth/signin"
                 >
                   Sign in
-                </a>
+                </a> */}
               </nav>
             </div>
           </div>

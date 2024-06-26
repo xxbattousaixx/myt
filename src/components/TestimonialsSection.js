@@ -8,22 +8,22 @@ function TestimonialsSection(props) {
     {
       avatar:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&fit=crop&h=160&&q=80&w=160",
-      name: "Elsa King",
-      body: "I’ve been using Divjoy templates for years. The code is consistently high-quality and pleasant to work with, so I highly recommended them.",
-      role: "Web Developer",
+      name: "Anna King",
+      body: "In one week, I generated enough sales to justify buying my site.",
+      role: "Ecommerce Jeweler",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1463453091185-61582044d556?crop=entropy&fit=crop&h=160&&q=80&w=160",
-      name: "Alex Saunders",
-      body: "I’ve been using Divjoy templates for years. The code is consistently high-quality and pleasant to work with, so I highly recommended them.",
-      role: "Graphic Designer",
+      name: "Alex McSaunders",
+      body: "Game Changer.",
+      role: "Marketing Professional",
     },
     {
       avatar:
         "https://images.unsplash.com/photo-1514846326710-096e4a8035e0?crop=entropy&fit=crop&h=160&&q=80&w=160",
-      name: "Sue Keller",
-      body: "I’ve been using Divjoy templates for years. The code is consistently high-quality and pleasant to work with, so I highly recommended them.",
+      name: "Sabrina Keller",
+      body: "I got new clients right away.",
       role: "CEO and Founder ",
     },
   ];

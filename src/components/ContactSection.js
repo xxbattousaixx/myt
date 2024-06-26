@@ -69,14 +69,19 @@ function ContactSection(props) {
               </div>
             )}
 
-            <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+<form 
+      action="https://postmail.invotes.com/send"
+      method="post"
+      id="email_form"
+      // onSubmit={handleSubmit(onSubmit)}
+      >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <TextField
                     type="text"
                     label="Name"
                     id="name"
-                    name="name"
+                    name="subject"
                     placeholder=""
                     error={errors.name}
                     inputRef={register()}
@@ -87,7 +92,7 @@ function ContactSection(props) {
                     type="email"
                     label="Email"
                     id="email"
-                    name="email"
+                    name="text"
                     placeholder=""
                     error={errors.email}
                     inputRef={register({
@@ -101,7 +106,7 @@ function ContactSection(props) {
                   type="textarea"
                   label="Message"
                   id="message"
-                  name="message"
+                  name="extra_message"
                   placeholder=""
                   error={errors.message}
                   rows={6}
@@ -110,9 +115,27 @@ function ContactSection(props) {
                   })}
                 />
               </div>
+              <input
+                      type="hidden"
+                      name="access_token"
+                      value="63yiwt3vt3p7kwh8m7zcdmd0"
+                    />
+
+                    <input
+                      type="hidden"
+                      name="success_url"
+                      value=".?message=Email+Successfully+Sent%21&isError=0"
+                    />
+                    <input
+                      type="hidden"
+                      name="error_url"
+                      value=".?message=Email+could+not+be+sent.&isError=1"
+                    />
               <Button
+                id="submit_form"
                 type="submit"
                 size="lg"
+                value="Send"
                 disabled={pending}
                 isBlock={true}
                 startIcon={

@@ -1,9 +1,9 @@
 {
-  "name": "my-divjoy-project",
+  "name": "make-your-time",
   "version": "0.1.0",
   "private": true,
   "keywords": [
-    "divjoy"
+    "myt"
   ],
   "dependencies": {
     "react": "17.0.2",
@@ -23,6 +23,7 @@
     "query-string": "6.13.8",
     "history": "4.10.1",
     "analytics": "0.8.9",
+    "is-url": "^1.2.4",
     "@analytics/google-analytics": "1.0.7"
   },
   "scripts": {

@@ -12,14 +12,14 @@ function HeroSection2(props) {
     {
       title: "Passion",
       description:
-        "We are passionate with what we do and love crafting products that can make your life easier and help you succeed. We pay attention to small details and always aiming for the best.",
+        "We are passionate with what we do and love crafting products that can make your life easier and help you succeed. We pay attention to small details and always aiming for the best while staying up to date with all the latest trends and tendencies in web design.",
       icon: HeartIcon,
       iconColor: "text-red-500",
     },
     {
       title: "Commitment",
       description:
-        "We are committed to our work and stand by our projects. Our aim is to improve them in every update and offer the most full-featured packages with the smallest possible footprint.",
+        "Allow us to make your website come to life -- We work with the latest technologies available to create a complete user experience. When websites work well they are sustainable and user friendly. ",
       icon: ArrowDownIcon,
       iconColor: "text-blue-500",
     },

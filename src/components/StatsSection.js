@@ -5,16 +5,16 @@ import SectionHeader from "./SectionHeader";
 function StatsSection(props) {
   const stats = [
     {
-      title: "Projects",
-      count: "3,500+",
+      title: "Average New Users (90d)",
+      count: "1,200+",
     },
     {
-      title: "Clients",
-      count: "260+",
+      title: "Average Views (7days)",
+      count: "800+",
     },
     {
-      title: "Earnings",
-      count: "175k+",
+      title: "Return On Investment",
+      count: "!",
     },
   ];
 

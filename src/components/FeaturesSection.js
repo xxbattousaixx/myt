@@ -14,48 +14,48 @@ import FeatureIcon from "./FeatureIcon";
 function FeaturesSection(props) {
   const features = [
     {
-      title: "Customizable",
+      title: "Customizeable themes and elements",
       description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+        "Components of your website are interactive and can be used to generate leads.",
       icon: AdjustmentsVerticalIcon,
       iconColor: "orange",
     },
-    {
-      title: "Rich Statistics",
-      description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
-      icon: ChartPieIcon,
-      iconColor: "red",
-    },
+    // {
+    //   title: "Rich Statistics",
+    //   description:
+    //     "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+    //   icon: ChartPieIcon,
+    //   iconColor: "red",
+    // },
 
     {
-      title: "Works globally",
+      title: "Contact Forms",
       description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+        "Let your audience reach you through convenient contact forms that are customizeable.",
       icon: GlobeAmericasIcon,
       iconColor: "emerald",
     },
     {
-      title: "Lighting fast UI",
+      title: "Transactions with Paypal or Stripe",
       description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+        "Allow immediate online payments.",
       icon: BoltIcon,
       iconColor: "purple",
     },
-    {
-      title: "Components",
-      description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
-      icon: PuzzlePieceIcon,
-      iconColor: "blue",
-    },
-    {
-      title: "Auto Auth",
-      description:
-        "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
-      icon: UsersIcon,
-      iconColor: "pink",
-    },
+    // {
+    //   title: "Components",
+    //   description:
+    //     "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+    //   icon: PuzzlePieceIcon,
+    //   iconColor: "blue",
+    // },
+    // {
+    //   title: "Auto Auth",
+    //   description:
+    //     "Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque. Proin rhoncus dui at ligula vestibulum ut facilisis.",
+    //   icon: UsersIcon,
+    //   iconColor: "pink",
+    // },
   ];
 
   return (

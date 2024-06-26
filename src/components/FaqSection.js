@@ -7,35 +7,26 @@ import Button from "./Button";
 function FaqSection(props) {
   const faqItems = [
     {
-      question: "What features are included?",
+      question: "How long will this take?",
       answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
+        "Depending on the scale of the project from 1 to 3 weeks.",
     },
     {
-      question: "Can I use PayPal to pay you?",
+      question: "Are there any payments before the site is finished?",
       answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
+        "Minimum 200$ will be charged weekly until project completion.",
     },
     {
-      question: "Do I get access to the community?",
+      question: "Can I make website changes myself?",
       answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
+        "You will not be able to make website changes yourself.",
     },
     {
-      question: "Can I get a refund just in case?",
+      question: "Can you make further modifications after project completion?",
       answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
+        "Yes. Modifications will range in pricing depending on scale.",
     },
-    {
-      question: "Do you offer email support?",
-      answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
-    },
-    {
-      question: "Are the updates free for life?",
-      answer:
-        "Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque.",
-    },
+    
   ];
 
   return (
