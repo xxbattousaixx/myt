@@ -346,8 +346,8 @@ function Navbar(props) {
                 <Link to="/" className={`${classes.dropdown.link}`}>
                   User Guides
                 </Link>
-              </nav> */}
-              <h4 className={`${classes.dropdown.title}`}>More</h4>
+              </nav>
+              <h4 className={`${classes.dropdown.title}`}>More</h4> */}
               <nav className="flex flex-col space-y-3">
                 <Link to="/about" className={`${classes.dropdown.link}`}>
                   About
